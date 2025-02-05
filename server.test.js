@@ -1,5 +1,5 @@
 import request from "supertest";
-import app from "./server.js"; // Adjust path if needed
+import app from "./index.js"; // Ensure server.js exports `app`
 
 describe("GET /", () => {
   it("should return a valid response for an allowed URL", async () => {
