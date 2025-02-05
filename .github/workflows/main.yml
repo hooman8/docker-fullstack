@@ -52,8 +52,8 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t my-dockerhub-username/my-node-app:latest .
-          docker push my-dockerhub-username/my-node-app:latest
+          docker build -t ldkh/my-node-app:latest .
+          docker push ldkh/my-node-app:latest
 
       - name: Deploy (Optional)
         run: |
