@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 const dnsLookup = promisify(dns.lookup);
 
-// Allow only specific domains
+// Allow only specific domains - whitelist
 const allowedDomains = ["google.com", "github.com"];
 
 async function isAllowedUrl(userUrl) {
