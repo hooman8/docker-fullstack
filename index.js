@@ -15,7 +15,7 @@ async function isAllowedUrl(userUrl) {
     const parsedUrl = new URL(userUrl);
     const hostname = parsedUrl.hostname;
 
-    // Deny private IPs
+    // Deny private IP
     const { address } = await dnsLookup(hostname);
     if (
       address.startsWith("127.") || // Loopback
